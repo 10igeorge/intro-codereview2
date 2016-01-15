@@ -3,7 +3,7 @@
   text-align: center;
 }
 
-.header {
+.header, .results {
   text-align: center;
 }
 
@@ -17,4 +17,9 @@ body {
 
 .container {
   font-size: 16px;
+}
+
+.swedenimg, .seychellesimg, .freiburgimg {
+  max-height: 800px;
+  max-width: 600px;
 }
