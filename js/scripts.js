@@ -48,37 +48,21 @@ $(function() {
       });
 
     $("#submit").click(function() {
-      var tropical = $('#tropical:checked').val();
       var coldsnowy = $('#coldsnowy:checked').val();
-      var temperate = $('#temperate:checked').val();
-      var hiking = $('#hiking:checked').val();
-      var skiing = $('#skiing:checked').val();
-      var clubbing = $('#clubbing:checked').val();
-      var lounging = $('#lounging:checked').val();
       var outdooradventurer = $('#outdooradventurer:checked').val();
-      var partyanimal = $('#partyanimal:checked').val();
-      var tourist = $('#tourist:checked').val();
-      var castles = $('#castles:checked').val();
-      var ocean = $('#ocean:checked').val();
-      var nature = $('#nature:checked').val();
-      var yesChildren = $('#yesChildren:checked').val();
-      var noChildren = $('#nochildren').val();
-      //
-      // var
-      // var skiing = $('#skiing:checked').val();
-      // var hiking = $('#hiking:checked').val();
-      // var
+
       if ($("input:radio[name='childrenQuestion']:checked").length == 0 ) {
          alert('Nothing is checked!');
-       } else if (coldsnowy && skiing && castles && tourist ) {
+       } else if (coldsnowy) {
          $("#swedenResult").show();
-       } else if (temperate && hiking && outdooradventurer && nature && yesChildren) {
-         $("#seychellesResult").show();
-       } else if (tropical && ocean && lounging && clubbing && partyanimal) {
-         $("#seychellesResult").show();
+         $("#question5").hide();
+       } else if (outdooradventurer) {
+         $("#freiburgResult").show();
+         $("#question5").hide();
        } else {
-        $('#freiburgResult').show();
+        $('#seychellesResult').show();
         $("#question5").hide();
       }
+
   });
 });
