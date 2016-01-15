@@ -24,6 +24,6 @@ body {
   max-width: 600px;
 }
 
-#question1, #question2, #question3, #question4, #question5, #swedenResult, #seychellesResult, #freiburgResult {
+#question1, #question2, #question3, #question4, #question5, #swedenResult, #seychellesResult, #freiburgResult, .redo {
   display: none;
 }

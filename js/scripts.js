@@ -48,21 +48,21 @@ $(function() {
       });
 
     $("#submit").click(function() {
+      $(".begin").hide();
+      $(".redo").show();
       var coldsnowy = $('#coldsnowy:checked').val();
-      var outdooradventurer = $('#outdooradventurer:checked').val();
-
+      var tropical = $('#tropical:checked').val();
       if ($("input:radio[name='childrenQuestion']:checked").length == 0 ) {
          alert('Nothing is checked!');
        } else if (coldsnowy) {
          $("#swedenResult").show();
          $("#question5").hide();
-       } else if (outdooradventurer) {
-         $("#freiburgResult").show();
+       } else if (tropical) {
+         $('#seychellesResult').show();
          $("#question5").hide();
        } else {
-        $('#seychellesResult').show();
+        $("#freiburgResult").show();
         $("#question5").hide();
       }
-
   });
 });
