@@ -4,9 +4,14 @@ body {
 
 .container {
   font-size: 16px;
+  margin-bottom: 10%;
 }
 
-.header, .results {
+.header {
+  margin-top: 15%;
+}
+
+#margin, .results {
   text-align: center;
 }
 
@@ -26,4 +31,20 @@ body {
 
 #question1, #question2, #question3, #question4, #question5, #swedenResult, #seychellesResult, #freiburgResult, .redo {
   display: none;
+}
+
+.footer {
+   position:fixed;
+   left:0px;
+   bottom:0px;
+   height:30px;
+   width:100%;
+   background:#BFBFBF;
+}
+
+.text-muted {
+  margin-top: .5em;
+  text-align: center;
+  color: #808080;
+  font-size: 12px;
 }

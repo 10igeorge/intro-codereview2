@@ -50,6 +50,7 @@ $(function() {
     $("#submit").click(function() {
       $(".begin").hide();
       $(".redo").show();
+      $("div.header").removeClass();
       var coldsnowy = $('#coldsnowy:checked').val();
       var tropical = $('#tropical:checked').val();
       if ($("input:radio[name='childrenQuestion']:checked").length == 0 ) {
