@@ -8,7 +8,7 @@ This is a quiz testing my abilities in HTML, CSS, and JavaScript. Its purpose is
 
 #### Setup/Installation Requirements
 
-* run $git clone https://github.com/10igeorge/week2codereview.git
+* run `git clone https://github.com/10igeorge/week2codereview.git`
 
 #### Home Page Landing
 https://10igeorge.github.io/week2codereview
